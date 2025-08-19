@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'garet';
+    src: url(./fonts/Garet-Book.otf);
+}
+
+/* nav bar */
+
+nav{
+    /* background-color: rgb(39, 39, 38); */
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 40px 40px;
+    position: fixed;
+    top: 0%;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    height: 90px;
+}
+
+.navLinks{
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav a{
+    font-size: 18px;
+    font-family: 'garet';
+    font-weight: 800;
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+
+nav a:hover{
+    color: rgb(119, 56, 247);
+    scroll-behavior: smooth;
+}
+/* nav bar end */
+
+/* home page */
+.container{
+    background: url(./assets/svg/LightBG.jpg) no-repeat center/cover;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+
+.myimg img{
+    height: 24.85rem;
+    position: absolute;
+    right: 0;
+    margin-top: 106px;
+}
+.homeSec{
+    text-align: left;
+    position: absolute;
+    margin: 80px 80px 80px 80px;
+    z-index: 1;
+    padding: 120px 10px 20px 10px;
+}
+
+.homeSec h1{
+    font-size: 2.5rem;
+    font-family: 'garet';
+    font-weight: 800;
+}
+
+.homeSec p{
+    font-family: 'Source Sans 3';
+    font-weight: 500;
+    color: rgb(66, 65, 65);
+}
+
+.homeSec a{
+    background-color: rgb(169, 129, 250);
+    text-decoration: none;
+    border-radius: .2rem;
+    padding: 20px 100px 20px 100px;
+    color: white;
+    font-family: 'garet';
+    font-weight: 800;
+}
+
+.social{
+    position: absolute;
+    right: 0;
+    margin: 20px 0px 40px 20px;
+    display: grid;
+    gap: .5rem;
+    padding: 120px 10px 20px 10px;
+    z-index: 1;
+}
+
+.social img{
+    height: 1.5rem;
+}
+
+.socialLogo{
+    padding: 5px 5px 5px 5px;
+}
+
+.socialLogo:hover{
+    background-color:rgb(188, 158, 249);
+    border-radius: .3rem;
+}
+/* home page end */
+
+/* About section */
+
+.aboutSec{
+    background: url(./assets/svg/BlackBG.jpg) no-repeat center/cover;
+    height: 150vh;
+    text-align: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.aboutSec p{
+    font-family: 'Source Sans 3';
+    color: rgb(163, 163, 163);
+}
+
+.aboutSec h1{
+    color: rgba(255, 0, 0, 0.751);
+    font-size: 40px;
+    font-family: 'garet';
+}
+
+.aboutSec hr{
+    margin: 10px 680px 20px 680px ;
+    border: 5px solid rgb(161, 106, 234);
+    border-radius: .5rem;
+}
+
+.aboutDetaila{
+    display: flex;
+    margin-top: 30px;
+}
+
+.aboutDetaila h2{
+    color: rgba(255, 0, 0, 0.751);
+    font-size: 35px;
+    font-family: 'garet';
+    margin-bottom: 20px;
+}
+
+.knowMe{
+    text-align: left;
+    display: grid;
+    gap: 1.5rem;
+    padding: 40px 180px 40px 70px;
+}
+
+.knowMe p{
+    font-size: 20px;
+    font-family: 'Source Sans 3';
+    font-weight: 600;
+    color: rgb(163, 163, 163);
+}
+
+.knowMe a{
+    background-color: rgba(148, 32, 32, 0.473);
+    padding: 20px 60px 20px 60px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Source Sans 3';
+    text-decoration: none;
+    color: white;
+    margin-right: 360px;
+    border-radius: .3rem;
+    box-shadow: 2px solid black;
+}
+
+.skills{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 40px 0px 40px 0px;
+    margin-right: 280px;
+}
+
+.keySkills{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: .5rem;
+    row-gap: .5rem;
+}
+
+.key{
+    background-color: rgba(148, 32, 32, 0.473);
+    padding: 10px 20px 10px 20px;
+    border-radius: .2rem;
+}
+
+.key h4{
+    font-size: 18px;
+   color: rgb(163, 163, 163);
+    font-family: 'Source Sans 3';
+}
+/* about end */
+
+/* Project sec */
+.projectSec{
+    background: url(./assets/svg/PlainBG.jpg) no-repeat center/cover;
+    background-color: rgba(221, 221, 221, 0.123);
+    height: 190vh;
+    text-align: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.projectSec h1{
+    color: black;
+    font-size: 40px;
+    font-family: 'garet';
+}
+
+.projectSec hr{
+    margin: 10px 680px 20px 680px ;
+    border: 5px solid rgb(161, 106, 234);
+    border-radius: .5rem;
+}
+
+.projectSec p{
+    font-family: 'Source Sans 3';
+    color: rgb(65, 64, 64);
+    font-weight: 400;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: .5rem;
+    margin: 40px 40px 40px 40px;
+    align-items: center;
+}
+
+.projects img{
+    height: 18rem;
+}
+
+.projectDet{
+    text-align: left;
+    margin-right: 10px;
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.projectDet a{
+    background-color: rgb(169, 129, 250);
+    padding: 20px 60px 20px 60px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Source Sans 3';
+    text-decoration: none;
+    color: white;
+    margin-right: 260px;
+    border-radius: .3rem;
+    box-shadow: 2px solid black;
+}
+/* project page end */
+
+/* contact */
+
+.contactSec{
+    background: url(./assets/svg/6.jpg) no-repeat center/cover;
+    background-color: rgba(221, 221, 221, 0.123);
+    height: 140vh;
+    text-align: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.contactSec h1{
+    color: black;
+    font-size: 40px;
+    font-family: 'garet';
+}
+
+.contactSec hr{
+    margin: 10px 680px 20px 680px ;
+    border: 5px solid rgb(161, 106, 234);
+    border-radius: .5rem;
+}
+
+.contactSec p{
+    font-family: 'Source Sans 3';
+    color: rgb(65, 64, 64);
+    font-weight: 600;
+}
+
+.form{
+    display: grid;
+    gap: .5rem;
+    text-align: left;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px 20px 40px 20px ;
+    margin: 40px 260px 40px 260px;
+    border-radius: .3rem;
+}
+
+.form label{
+    font-size: 20px;
+    color: rgb(185, 184, 184);
+    font-family: 'Source Sans 3';
+    font-weight: 400;
+}
+
+.form input{
+    padding: 20px 10px 20px 10px;
+    font-size: 15px;
+    font-family: 'Source Sans 3';
+    font-weight: 700;
+    background-color: rgba(183, 178, 178, 0.452);
+    border-radius: .3rem;
+    border: none;
+}
+
+.form textarea{
+     padding: 20px 10px 20px 10px;
+    font-size: 15px;
+    font-family: 'Source Sans 3';
+    font-weight: 700;
+    background-color: rgba(183, 178, 178, 0.452);
+    border-radius: .3rem;
+}
+/* contact end */
+
+.footer-content{
+    background: url(./assets/svg/BlackBG.jpg);
+    padding-bottom: 100px;
+}
+.footer{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.footer h2{
+    font-family: 'Source Sans 3';
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.Myinfo{
+    display: grid;
+    gap: .5rem;
+    margin-right: 460px;
+    margin-top: 120px;
+    margin-left: 60px;
+}
+
+.Myinfo p{
+    font-family: 'Source Sans 3';
+    color: white;
+    font-size: 20px;
+}
+
+
+.media{
+    margin-top: 120px;
+    margin-right: 80px;
+}
+
+.media .Logo{
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.Logo a img{
+    height: 30px;
+}
+
+.footer-content hr{
+    border: 1px solid rgb(226, 226, 226);
+    margin: 80px 80px 40px 60px;
+}
+
+footer{
+    text-align: center;
+    align-items: center;
+    color: rgba(255, 0, 0, 0.751);
+    font-family: 'Source Sans 3';
+    font-size: 18px;
+}
+
+footer a{
+    font-family: 'Source Sans 3';
+    font-size: 18px;
+    color: rgba(255, 0, 0, 0.751);
+}
+
+/* mobile screen responsive code*/
+@media (max-width:576px){
+*{
+    font-size: 20px;
+}
+nav{
+    gap: 2.5rem;
+}
+.navLinks{
+    display: flex;
+    gap: .5rem;
+}
+nav a{
+    font-size: 10px;
+}
+
+.homeSec{
+    margin: 60px 0px 10px 10px;
+}
+
+.myimg img{
+    height: 0rem;
+}
+
+.social{
+    background-color: none;
+    margin: 0px 0px 0px 0px;
+    display: none;
+    gap: .5rem;
+    padding: 0px 0px 0px 0px;
+
+}
+
+.aboutSec{
+    height: 160vh;
+}
+
+.aboutSec p{
+    font-size: 18px;
+}
+
+.aboutSec hr{
+    margin: none ;
+    border: none;
+    border-radius: 0rem;
+}
+
+.aboutDetaila{
+    display: grid;
+    margin-top: 30px;
+}
+
+.knowMe{
+    padding: 0px 0px 0px 0px;
+}
+
+.knowMe p{
+    font-size: 20px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects img{
+    height: 10rem;
+}
+
+.projectDet{
+    text-align: center;
+}
+
+.projectDet a{
+    padding: 10px 10px 10px 10px;
+    margin-right: 0px;
+}
+
+.form{
+    padding: 10px 10px 10px 10px ;
+    margin: 10px 10px 10px 10px;
+}
+
+.footer{
+    display: grid;
+}
+
+.Myinfo{
+    margin-right: 60px;
+    margin-left: 20px;
+}
+
+.media{
+    margin-left: 20px;
+}
+
+.footer-content hr{
+    border: 1px solid rgb(226, 226, 226);
+    margin: 80px 20px 40px 20px;
+}
+}
