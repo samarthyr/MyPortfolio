@@ -17,11 +17,13 @@
 /* nav bar */
 
 nav{
-    /* background-color: rgb(39, 39, 38); */
+    background-color: rgba(247, 247, 168, 0.639);
     display: flex;
     justify-content: space-between;
     padding: 40px 40px 40px 40px;
     position: fixed;
+    text-align: center;
+    align-items: center;
     top: 0%;
     right: 0;
     left: 0;
@@ -39,7 +41,7 @@ nav a{
     font-family: 'garet';
     font-weight: 800;
     text-decoration: none;
-    color: rgb(87, 87, 87);
+    color: rgb(86, 82, 82);
 }
 
 nav a:hover{
